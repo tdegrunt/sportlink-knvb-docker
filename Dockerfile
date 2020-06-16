@@ -1,5 +1,5 @@
 # Pull base image from official repo
-FROM openjdk:8
+FROM openjdk:8-jre
 
 # Configure desired timezone
 ENV TZ=Europe/Amsterdam
