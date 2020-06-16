@@ -18,8 +18,9 @@ RUN id ${user} > /dev/null 2>&1 \
     || { groupadd -g "${gid}" "${group}" && useradd -md /home/${user} -s /bin/bash -g "${group}" -u "${uid}" "${user}"; }
 
 
-RUN apt-get update
-RUN apt-get install -y icedtea-netx
+RUN apt-get update \
+    && apt-get install -y icedtea-netx \
+    && apt-get clean
 
 # Switch to non-root user
 USER ${user}
