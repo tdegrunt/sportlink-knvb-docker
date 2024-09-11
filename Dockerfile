@@ -3,6 +3,7 @@ FROM openjdk:8-jre
 
 # Configure desired timezone
 ENV TZ=Europe/Amsterdam
+ENV _JAVA_OPTIONS='-Dsun.java2d.xrender=false'
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo $TZ > /etc/timezone
 
