@@ -13,6 +13,13 @@ https://medium.com/@mreichelt/how-to-show-x11-windows-within-docker-on-mac-50759
 misschien een pull request maken?
 )
 
+Voor MacOS installeer je XQuartz:
+
+- brew install xquartz
+- Bij settings (onder Security) zet je "Allow connections from network clients aan
+- Reboot
+- Voer dit nog uit op de command line: `xhost +locahost`
+
 ## Vereisten
 
 Bash en Docker zijn nodig, git is handig.
