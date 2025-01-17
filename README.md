@@ -16,9 +16,9 @@ misschien een pull request maken?
 Voor MacOS installeer je XQuartz:
 
 - brew install xquartz
-- Bij settings (onder Security) zet je "Allow connections from network clients aan
+- Bij settings (onder Security) zet je "Allow connections from network clients" aan
 - Reboot
-- Voer dit nog uit op de command line: `xhost +locahost`
+- Voer dit nog uit op de command line: `xhost +localhost`
 
 ## Vereisten
 
